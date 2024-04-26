@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hhs!)(mdg0xxk8b-#wha%+!_9ng(dbau+^8cnb+prs*pcr9eoz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://jumiaclone-aw73.onrender.com']
 
 
 # Application definition
