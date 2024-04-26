@@ -151,19 +151,19 @@ WSGI_APPLICATION = 'JumiaClone.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # postgresql database
 import dj_database_url
 
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://ecommerce_database_4801_user:kgMA73Vj07U0QecDkh7xXArrdTKp1o1I@dpg-coltfi21hbls7396kmq0-a.oregon-postgres.render.com/ecommerce_database_4801')
-# }
+DATABASES = {
+    'default': dj_database_url.parse('postgres://ecommerce_database_4801_user:kgMA73Vj07U0QecDkh7xXArrdTKp1o1I@dpg-coltfi21hbls7396kmq0-a.oregon-postgres.render.com/ecommerce_database_4801')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
