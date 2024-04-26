@@ -1,0 +1,35 @@
+<body onload="makePayment()">
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script>
+    window.onload=function makePayment() {
+        // var customerName = document.getElementById("name").value;
+        // var customerEmail = document.getElementById("email").value;
+        // var customerPhone = document.getElementById("phone").value;
+       // amount = '{{ order.get_total_price }}'
+      FlutterwaveCheckout({
+        public_key: "FLWPUBK_TEST-873208935c490f285da9e66911e8e2f8-X",
+        tx_ref: "titanic-48981487343MDI0NzMx",
+        amount: '{{amount}}',
+        currency: "NGN",
+        payment_options: "card, mobilemoneyghana, ussd",
+        redirect_url: "http://127.0.0.1:8000/confirm_payment/"+1,
+        meta: {
+          consumer_id: 23,
+          consumer_mac: "92a3-912ba-1192a",
+        },
+        customer: {
+          email: '{{request.user.email}}',
+          phone_number: '{{request.user.phone_number}}',
+          name: '{{request.user.name}}',
+        },
+        customizations: {
+          title: "your online store purchase",
+          description: "The best app for your business needs",
+          logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNCteuQXfQPZdA-ZkB79fGwBVVSi6C6TPqCw&usqp=CAU",
+        },
+      });
+    }
+    
+    
+    </script>
+</body>

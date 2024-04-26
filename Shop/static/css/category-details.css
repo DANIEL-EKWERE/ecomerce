@@ -1,0 +1,70 @@
+/* *{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+}
+i{
+    cursor: pointer;
+}
+
+
+html,body {
+    overflow-x: hidden;
+    margin: 0;
+   
+  }
+  
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    
+}
+  
+html::-webkit-scrollbar-track {
+    background: #eee;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #0984e3;
+    border-radius: 5rem;
+} */
+ 
+a .product-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+a .product-card .text{
+    height: 30%;
+    padding: 5px 7px;
+}
+ a .product-card .headings{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+a .product-card .price-card{
+    font-size: 0.9rem;
+}
+a .price-card .discount{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+a .product-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: repeat(auto,350px);
+    grid-auto-rows: 240px;
+    gap: 1.0rem;
+}
+a .product-wrapper .product-card{
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+    margin-top: 4px;
+    text-decoration: none;
+    color: unset;
+ 
+}

@@ -1,0 +1,33 @@
+{% extends 'Shop/index.html' %}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div style="margin-top:20%;"></div>
+<div class="product-wrapper">
+{% for data in product %}
+           
+{% if data.category.title == 'Phones' %}
+<a href="{% url 'product_detail' data.category data.id %}"  class="product-card" >
+       <img src="{{data.main_image.url}}" alt="">
+       <div class="text">
+           <div class="headings">{{data.name}}</div>
+           <div class="price-card">
+               <div class="price">₦{{data.price}}</div>
+               <div class="discount">₦{{data.discount_price}}</div>
+           </div>
+       </div>
+</a>
+
+{% endif %}
+{% endfor %}
+</div>
+{% endblock %}
+{% block script %}
+<script src="{% static 'javascript/home.js' %}"></script>
+{% endblock %}
