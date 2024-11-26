@@ -106,7 +106,6 @@ rotate-screen==0.1.0
 rsa==4.9
 sitemaps==0.1.0
 six==1.16.0
-sketchpy==0.0.23
 sniffio==1.3.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.2
