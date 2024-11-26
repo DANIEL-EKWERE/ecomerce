@@ -162,7 +162,7 @@ WSGI_APPLICATION = 'JumiaClone.wsgi.application'
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://ecommerce_database_4801_user:kgMA73Vj07U0QecDkh7xXArrdTKp1o1I@dpg-coltfi21hbls7396kmq0-a.oregon-postgres.render.com/ecommerce_database_4801')
+    'default': dj_database_url.parse('postgresql://ecommerce_tghd_user:Zo17XYfkR646MREvUqUfdJB81gCs5fZ3@dpg-ct2pl03qf0us73a03cg0-a.oregon-postgres.render.com/ecommerce_tghd')
 }
 
 # Password validation
