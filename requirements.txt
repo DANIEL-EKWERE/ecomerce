@@ -123,4 +123,5 @@ urllib3==1.26.9
 user-agents==2.2.0
 webencodings==0.5.1
 whitenoise==6.6.0
+wheel==0.44.0
 yarl==1.8.2
