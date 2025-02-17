@@ -19,11 +19,13 @@ comtypes==1.1.11
 cryptography==37.0.2
 dj-database-url==2.1.0
 Django==3.2.1
-django-ckeditor==6.5.1
+# django-ckeditor==6.5.1
+django-ckeditor==6.7.1 
 django-classy-tags==4.1.0
 django-cms==3.11.4
 django-cors-headers==4.3.0
-django-countries==7.4.2
+# django-countries==7.4.2
+django_countries==7.6.1
 django-embed-video==1.4.8
 django-environ==0.11.2
 django-filter==23.3
@@ -32,7 +34,8 @@ django-htmlmin==0.11.0
 django-js-asset==2.0.0
 django-livereload-server==0.4
 django-sekizai==4.1.0
-django-taggit==3.0.0
+# django-taggit==3.0.0
+django-taggit==6.1.0
 django-treebeard==4.7
 djangocms-admin-style==3.2.6
 djangocms-animate-on-scroll==1.0.1
